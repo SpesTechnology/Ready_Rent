@@ -34,14 +34,13 @@ class UserHomePage extends StatelessWidget {
         ],
       ),
       body:  Container(
-        
         color:Colors.white,
         child: Padding(
         padding:  const EdgeInsets.all(8.0),
         child: (GridView(
                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
-              mainAxisSpacing: 10,
+              mainAxisSpacing: 20,
               crossAxisSpacing: 10, 
               ),
             children: [
@@ -51,30 +50,10 @@ class UserHomePage extends StatelessWidget {
                 padding: EdgeInsets.all(8.0),
                 child: Icon(CupertinoIcons.doc_text_search,size: 50,color: Colors.white,),
               ),
+              Text("Search Vacancy",style: TextStyle(color:Colors.white),),
               ]),
               ),
-              Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: kPrimaryColor),
-              child: Column(children:const[
-              Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Icon(CupertinoIcons.doc_text_search,size: 50,color: Colors.white,),
-              ),
-              ]),
-              ),
-              Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: kPrimaryColor),
-              child: Column(children:const[
-              Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Icon(CupertinoIcons.star_circle_fill,size: 70,color: Colors.white,),
-              ),
-              ]),),
-              Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: kPrimaryColor),
-              child: Column(children:const[
-              Padding(
-                padding: EdgeInsets.fromLTRB(0.0,8.0,40.0,8.0),
-                child: Icon(CupertinoIcons.money_dollar_circle_fill,size: 70,color: Colors.white,),
-              ),
-              ]),),
+              
             ], 
               )),
           ), 
