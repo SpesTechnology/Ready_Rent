@@ -52,10 +52,6 @@ class Hotels extends StatelessWidget {
             child: CarouselSlider(
               items: [
                  Container(
-                   child: const Padding(
-                     padding: EdgeInsets.all(8.0),
-                     child: Text("SINGLE HOSTELS",style:TextStyle(backgroundColor: Colors.white,fontSize: 24,),),
-                   ),
                   margin: const EdgeInsets.all(1.0),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(2.0),
