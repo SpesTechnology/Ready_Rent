@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:readyrent/constant.dart';
-import 'package:readyrent/login.dart';
+import 'package:readyrent/hotels.dart';
+// import 'package:readyrent/login.dart';
 
 class ChangePassword extends StatelessWidget {
   const ChangePassword({ Key? key }) : super(key: key);
@@ -100,7 +101,7 @@ class ChangePassword extends StatelessWidget {
                 child: TextButton(
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (context){
-                        return const Login();
+                        return const Hotels();
                       }));
                     },
                     child: const Text('Save Password',

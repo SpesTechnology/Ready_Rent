@@ -2,11 +2,7 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 // import 'package:readyrent/constant.dart';
 import 'package:readyrent/welcomepage.dart';
-// import 'package:readyrent/welcomepage.dart';
-// import 'package:readyrent/login.dart';
-// import 'package:readyrent/splash.dart';
-// import 'package:readyrent/signup.dart';
-// import 'login.dart';
+
 
 
 void main() {
