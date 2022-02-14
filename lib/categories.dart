@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:readyrent/constant.dart';
 import 'package:readyrent/mainhomepage.dart';
-import 'package:readyrent/profilepage.dart';
 
 
 void main() => runApp(const Categories());
@@ -143,7 +142,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         ],
       ),
 
-  const EditProfile(),
+  
   ];
   
 
@@ -177,6 +176,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             backgroundColor: kPrimaryColor,
           ),
           BottomNavigationBarItem(
+            
             icon: Icon(Icons.category),
             label: 'Categories',
             backgroundColor: kPrimaryColor,

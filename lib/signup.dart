@@ -67,7 +67,12 @@ class SignUp extends StatelessWidget {
                    borderSide:BorderSide.none,
                  ),
                  ),
-                  
+                    validator: (value) {
+              if (value!.isEmpty) {
+                return 'required';
+              }
+              return null;
+            },
                   ),
             ),
           ),
@@ -117,7 +122,12 @@ class SignUp extends StatelessWidget {
                  border: OutlineInputBorder(borderSide:BorderSide.none
                  ),
                  ),
-                  
+                    validator: (value) {
+              if (value!.isEmpty) {
+                return 'required';
+              }
+              return null;
+            },
                   ),
             ),
           ),

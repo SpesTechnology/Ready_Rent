@@ -1,7 +1,8 @@
 // import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:readyrent/categories.dart';
+// import 'package:readyrent/categories.dart';
 import 'package:readyrent/constant.dart';
+import 'package:readyrent/profilepage.dart';
 // import 'package:readyrent/mainhomepage.dart';
 // import 'package:readyrent/homepage.dart';
 // import 'package:readyrent/mainhomepage.dart';
@@ -115,7 +116,7 @@ class Login extends StatelessWidget {
               child: TextButton(
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context){
-                      return const Categories();
+                      return const EditProfile();
                     }));
                   },
                   child: const Text('Login',
