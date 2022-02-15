@@ -53,13 +53,27 @@ class UserHomePage extends StatelessWidget {
               Text("Search Vacancy",style: TextStyle(color:Colors.white),),
               ]),
               ),
+                   Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: kPrimaryColor),
+              child: Column(children:const[
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Icon(CupertinoIcons.doc_text_search,size: 50,color: Colors.white,),
+              ),
+              Text("Search Vacancy",style: TextStyle(color:Colors.white),),
+              ]),
+              ),
               
             ], 
               )),
           ), 
            
         ),
+        
        
     );
+  
+  
+   
   }
 }
+
