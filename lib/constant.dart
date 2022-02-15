@@ -7,3 +7,5 @@ const kPrimaryLightColor = Color(0xFFD6D6D6);
 const kPrimarySignUp = Color(0xFF757575);
 const kPrimarySearch = Color(0xFFBDBDBD);
 const kPrimarySearchColor = Color(0xFFf5f5f5);
+const kPrimaryHomeColor = Color(0xFFefd1ff);
+const kPrimaryHomeOneColor = Color(0xFFed17ff);
