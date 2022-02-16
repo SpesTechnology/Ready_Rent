@@ -11,7 +11,7 @@ class Categories extends StatelessWidget {
          backgroundColor: Colors.white,
         elevation: 0,
         iconTheme: const IconThemeData(color:kPrimaryColor),
-        title: const Text("Categories"),
+        title: const Text("Categories",style: TextStyle(color: kPrimaryColor),),
         ),
 
 
