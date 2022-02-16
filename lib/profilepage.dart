@@ -31,7 +31,7 @@ class EditProfile extends StatelessWidget {
                  radius:50,
                  ),
                  const SizedBox(
-                   width: 100,
+                   width: 95,
                    ),
                  Column(
                    children:[
