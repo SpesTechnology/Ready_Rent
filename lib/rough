@@ -481,3 +481,92 @@ class _HomePageState extends State<HomePage> {
           
       //   ],
       // ),
+
+
+
+        //              Padding(
+          // //                     padding:
+          // //                         const EdgeInsets.symmetric(horizontal: 8.0),
+          // //                     child: TextButton(onPressed: (){
+
+          // //                     },
+          // //                      child: const Text('View detials',
+          // //             style: TextStyle(
+          // //             color:Colors.white,
+          // //             fontSize: 20.0),
+          // //             ),)
+
+          // //                   ),
+          //       ),
+                
+          //     ),
+          //   ),
+          // ),
+//                   Stack(
+//     alignment: Alignment.center,
+//     children: const <Widget>[
+//         Image(image: AssetImage("assets/images/profile.jpeg")),
+//         Text("someText"),
+//     ]
+// )
+            // ],
+
+
+
+                 //  Card(
+          //   elevation: 0,
+          //   child: Padding(
+          //     padding: const EdgeInsets.all(1.0),
+          //     child: ListTile(
+          //       leading: const CircleAvatar(
+          //         radius: 35,
+          //         backgroundImage: NetworkImage(
+          //             "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
+          //       ),
+               
+          //       subtitle: Row(
+          //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //         children:[
+          //           const Icon(
+          //             Icons.location_on,
+          //             color: Colors.black,
+          //           ),
+          //          const SizedBox(width: 5.0),
+          //           const Text("New Site"),
+          //            Padding(
+          //   padding:  const EdgeInsets.symmetric(horizontal: 8.0),
+          //   child: Container(
+          //     decoration: BoxDecoration(
+          //       borderRadius: BorderRadius.circular(5.0),
+          //       color: kPrimaryColor,
+          //     ),
+          //     child: Row(
+          //       children: [
+          //         TextButton(
+          //             onPressed: () {
+                      
+          //             },
+          //             child: const Text('View detials',
+          //                 style: TextStyle(
+          //                 color:Colors.white,
+          //                 fontSize: 10.0),
+          //                 ),
+          //                 ),
+          //       ],
+          //     ),
+          //   ),
+          // ),
+                   //  Padding(
+                    //   padding:
+                    //     const EdgeInsets.symmetric(horizontal: 8.0),
+                    //   child: TextButton(
+                    //     onPressed: (){
+
+                    //           },
+                    //            child: const Text('View detials',
+                    //   style: TextStyle(
+                    //   color:Colors.black,
+                    //   fontSize: 15.0),
+                    //   ),)
+
+                    //         ),
