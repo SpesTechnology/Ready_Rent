@@ -1,46 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 import 'package:readyrent/constant.dart';
-import 'package:readyrent/mainhomepage.dart';
-
-
-void main() => runApp(const Categories());
 
 class Categories extends StatelessWidget {
-  const Categories({Key? key}) : super(key: key);
-
-  static const String _title = 'Categories';
+  const Categories({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: _title,
-      home: MyStatefulWidget(),
-    );
-  }
-}
-
-class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({Key? key}) : super(key: key);
-
-  @override
-  State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
-}
+    return Scaffold(
+        appBar: AppBar(
+         backgroundColor: Colors.white,
+        elevation: 0,
+        iconTheme: const IconThemeData(color:kPrimaryColor),
+        title: const Text("Categories"),
+        ),
 
 
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  int _selectedIndex = 0;
-   static TextStyle optionStyle =
-      const TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static  final List<Widget> _widgetOptions = <Widget>[
-    const UserHomePage(),
-    Text(
-      'Index 1: Search',
-      style: optionStyle,
-    ),
-    
-     ListView(   
+      body:  ListView(   
         children:  [
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -141,56 +116,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           ),  
         ],
       ),
-
-  
-  ];
-  
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: kPrimaryColor,
-        title: const Text('CATEGORIES'),
-        iconTheme: const IconThemeData(color:Colors.white),
-      ),
-      body:Container(
-         child: _widgetOptions.elementAt(_selectedIndex),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-           backgroundColor: kPrimaryColor,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Search',
-            backgroundColor: kPrimaryColor,
-          ),
-          BottomNavigationBarItem(
-            
-            icon: Icon(Icons.category),
-            label: 'Categories',
-            backgroundColor: kPrimaryColor,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-            backgroundColor: kPrimaryColor,
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.white,
-        onTap: _onItemTapped,
-      ),
+      
     );
   }
 }
