@@ -3,7 +3,8 @@ import 'package:readyrent/categories.dart';
 import 'package:readyrent/constant.dart';
 import 'package:readyrent/mainhomepage.dart';
 import 'package:readyrent/profilepage.dart';
-import 'package:readyrent/search.dart';
+import 'package:readyrent/properties/property_list_screen.dart';
+// import 'package:readyrent/search.dart';
 
 class MyBottomNavigationBar extends StatefulWidget {
   const MyBottomNavigationBar({ Key? key }) : super(key: key);
@@ -17,7 +18,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
 int _currentIndex = 0;
 final List<Widget>  _children = [
    const UserHomePage(),
-   const SearchProperties(),
+   const PropertyListScreen(),
    const Categories(),
    const EditProfile(),
 ];
