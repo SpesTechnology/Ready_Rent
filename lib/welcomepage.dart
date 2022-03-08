@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:readyrent/constant.dart';
 import 'package:readyrent/login.dart';
@@ -85,6 +86,28 @@ class WelcomePage extends StatelessWidget {
                       fontSize: 20.0),
                       ),
                       ),
+            ),
+          ),
+          Padding(
+             padding:  const EdgeInsets.fromLTRB(40.0,8.0,40.0,8.0),
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15.0),
+                color:kPrimaryLightColor,     
+              ),
+              child: TextFormField(
+                 decoration:  const InputDecoration(
+                   icon: Padding(
+                     padding:  EdgeInsets.all(8.0),
+                     child: Icon(Icons.lock),
+                   ), 
+                  hintText: ("Sign in Google"),
+                 border: OutlineInputBorder(
+                   borderSide:BorderSide.none,
+                 ),
+                 ),
+                  
+                  ),
             ),
           ),
         ],

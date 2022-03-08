@@ -50,7 +50,7 @@ class Login extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 15,
+            height: 10,
           ),
           Padding(
              padding:  const EdgeInsets.fromLTRB(40.0,8.0,40.0,8.0),
@@ -76,7 +76,7 @@ class Login extends StatelessWidget {
             ),
           ),
          const SizedBox(
-            height: 15,
+            height: 10,
           ),
             Padding(
              padding:  const EdgeInsets.fromLTRB(40.0,8.0,40.0,8.0),
@@ -100,9 +100,8 @@ class Login extends StatelessWidget {
                   ),
             ),
           ),
-        
          const SizedBox(
-           height:15,
+           height:10,
           ),
           Padding(
             padding:  const EdgeInsets.fromLTRB(40.0,8.0,40.0,8.0),
@@ -125,6 +124,7 @@ class Login extends StatelessWidget {
                       ),
             ),
           ),
+            
         Padding(
           padding: const EdgeInsets.fromLTRB(50.0,8.0,40.0,8.0),
          child: Center(

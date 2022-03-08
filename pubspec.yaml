@@ -81,6 +81,15 @@ flutter:
       - assets/images/hp1.jpeg
       - assets/images/hp2.jpeg
       - assets/images/hp3.jpeg
+      - assets/images/building1.jpg
+      - assets/images/building2.jpg
+      - assets/images/building3.jpeg
+      - assets/images/building4.jpeg
+      - assets/images/hostelshared1.jpg
+      - assets/images/hostelshared2.jpg
+      - assets/images/land2.jpg
+      - assets/images/land.jpg
+      - assets/images/googlelogo.png
 
   #   - images/a_dot_ham.jpeg
 

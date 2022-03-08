@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:readyrent/constant.dart';
-import 'package:readyrent/properties/properties.dart';
-import 'package:readyrent/properties/property_details_screen.dart';
+import 'package:readyrent/hostels/sharedhostel_details_screen.dart';
+import 'package:readyrent/hostels/sharedhostels.dart';
+
+
+
 // import 'package:readyrent/search.dart';
 
-class PropertyListScreen extends StatelessWidget {
-  const PropertyListScreen({ Key? key }) : super(key: key);
+class SharedHostelListScreen extends StatelessWidget {
+  const SharedHostelListScreen({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,23 +17,23 @@ class PropertyListScreen extends StatelessWidget {
         iconTheme: const IconThemeData(color:kPrimaryColor),
         backgroundColor: Colors.white,
         elevation: 0,
-        title: const Text("Properties"),
+        title: const Text("Shared Room Hostels"),
       ),
       body: ListView.builder(
         
-        itemCount: propertyList.length,
+        itemCount:  sharedHostelList.length,
         itemBuilder: (context, index) {
-        Property property = propertyList[index];
+         SharedHostel  sharedHostel =  sharedHostelList[index];
         return Card(
           child: ListTile(
-            leading:Image.asset(property.picture),
-            title: Text(property.title),
-            subtitle: Text(property.description),
+            leading:Image.asset( sharedHostel.picture),
+            title: Text( sharedHostel.title),
+            subtitle: Text( sharedHostel.description),
             trailing: TextButton(onPressed: (){
                 Navigator.push(
                 context,
                  MaterialPageRoute(
-                   builder: (context) => DetailsScreen(property)));
+                   builder: (context) => DetailsScreen( sharedHostel)));
               },
                          child: const Text('View detials',
                 style: TextStyle(
@@ -42,7 +45,7 @@ class PropertyListScreen extends StatelessWidget {
               Navigator.push(
                 context,
                  MaterialPageRoute(
-                   builder: (context) => DetailsScreen(property)));
+                   builder: (context) => DetailsScreen( sharedHostel)));
             },
           
           ),

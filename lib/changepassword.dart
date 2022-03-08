@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:readyrent/constant.dart';
-import 'package:readyrent/hotels.dart';
+import 'package:readyrent/categories/hostels.dart';
 // import 'package:readyrent/login.dart';
 
 class ChangePassword extends StatelessWidget {

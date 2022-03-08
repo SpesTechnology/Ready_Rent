@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:readyrent/categories/apartments.dart';
+import 'package:readyrent/categories/buildings.dart';
+import 'package:readyrent/categories/lands.dart';
 import 'package:readyrent/constant.dart';
+import 'package:readyrent/categories/hostels.dart';
 
 class Categories extends StatelessWidget {
   const Categories({ Key? key }) : super(key: key);
@@ -8,10 +12,10 @@ class Categories extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-         backgroundColor: Colors.white,
+        backgroundColor: Colors.white,
         elevation: 0,
         iconTheme: const IconThemeData(color:kPrimaryColor),
-        title: const Text("Categories"),
+        title: const Text("CATEGORIES",style: TextStyle(color: kPrimaryColor),),
         ),
 
 
@@ -33,10 +37,24 @@ class Categories extends StatelessWidget {
                     fit:BoxFit.cover ,
                     height: 150,
                     ),
-                    const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text("HOSTEL",style:TextStyle(backgroundColor: Colors.white,fontSize: 24,),),
-                    ),
+                    Padding(
+                      padding:  const EdgeInsets.fromLTRB(40.0,8.0,20.0,8.0),
+                      child: Container(
+                      decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10.0),
+                      color: Colors.white,
+              ),
+              child: TextButton(
+                  onPressed: (){
+                          Navigator.push(context, MaterialPageRoute(builder:(context){
+                            return const Hotels();
+                          }));
+                      }, child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text("HOSTELS",style:TextStyle(fontSize: 24,color: Colors.black),),
+                      ),
+                        ),
+                      ),)
                   ],
                 ), 
               ),
@@ -58,10 +76,24 @@ class Categories extends StatelessWidget {
                     fit:BoxFit.cover ,
                     height: 150,
                     ),
-                    const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child:Text("BUILDINGS",style:TextStyle(backgroundColor: Colors.white,fontSize: 24,),),
-                    )
+                     Padding(
+                      padding:  const EdgeInsets.fromLTRB(40.0,8.0,20.0,8.0),
+                      child: Container(
+                      decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10.0),
+                      color: Colors.white,
+              ),
+              child: TextButton(
+                  onPressed: (){
+                          Navigator.push(context, MaterialPageRoute(builder:(context){
+                            return const Buildings();
+                          }));
+                      }, child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text("BUILDINGS",style:TextStyle(fontSize: 24,color: Colors.black),),
+                      ),
+                        ),
+                      ),)
                   ],
                 ), 
               ),
@@ -82,10 +114,24 @@ class Categories extends StatelessWidget {
                     fit:BoxFit.cover ,
                     height: 150,
                     ),
-                    const Padding(
-                      padding:EdgeInsets.all(8.0),
-                      child:Text("APARTMENTS",style:TextStyle(backgroundColor: Colors.white,fontSize: 24,),),
-                    )
+                   Padding(
+                      padding:  const EdgeInsets.fromLTRB(40.0,8.0,20.0,8.0),
+                      child: Container(
+                      decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10.0),
+                      color: Colors.white,
+              ),
+              child: TextButton(
+                  onPressed: (){
+                          Navigator.push(context, MaterialPageRoute(builder:(context){
+                            return const Apartments();
+                          }));
+                      }, child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text("APARTMENTS",style:TextStyle(fontSize: 24,color: Colors.black),),
+                      ),
+                        ),
+                      ),)
                   ],
                 ), 
               ),
@@ -106,10 +152,24 @@ class Categories extends StatelessWidget {
                     fit:BoxFit.cover ,
                     height: 150,
                     ),
-                    const Padding(
-                      padding:EdgeInsets.all(8.0),
-                      child:Text("LANDS",style:TextStyle(backgroundColor: Colors.white,fontSize: 24,),),
-                    )
+                    Padding(
+                      padding:  const EdgeInsets.fromLTRB(40.0,8.0,20.0,8.0),
+                      child: Container(
+                      decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10.0),
+                      color: Colors.white,
+              ),
+              child: TextButton(
+                  onPressed: (){
+                          Navigator.push(context, MaterialPageRoute(builder:(context){
+                            return const Lands();
+                          }));
+                      }, child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text("LANDS",style:TextStyle(fontSize: 24,color: Colors.black),),
+                      ),
+                        ),
+                      ),)
                   ],
                 ), 
               ),

@@ -63,8 +63,7 @@ class UserHomePage extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          const Text("All adds"),
-
+        
          const SizedBox(
            height: 15,
          ),
@@ -139,12 +138,15 @@ class TopSlider extends StatelessWidget {
            mainAxisAlignment: MainAxisAlignment.center,
            crossAxisAlignment:CrossAxisAlignment.center,
            children: <Widget>[
-             Text(title,
-             style: const TextStyle(
-               color: Colors.white,
-               fontWeight:FontWeight.bold,
-               fontSize: 18.0,
-             ),
+             Padding(
+               padding: const EdgeInsets.fromLTRB(75.0,8.0,75.0,8.0),
+               child: Text(title,
+               style: const TextStyle(
+                 color: Colors.white,
+                 fontWeight:FontWeight.bold,
+                 fontSize: 18.0,
+               ),
+               ),
              ),
               Padding(
                 padding: const EdgeInsets.all(8.0),

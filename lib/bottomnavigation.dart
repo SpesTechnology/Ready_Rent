@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:readyrent/categories.dart';
+import 'package:readyrent/categories/categories.dart';
 import 'package:readyrent/constant.dart';
 import 'package:readyrent/mainhomepage.dart';
 import 'package:readyrent/profilepage.dart';
