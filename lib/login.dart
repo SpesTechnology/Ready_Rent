@@ -37,16 +37,18 @@ class Login extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          Padding(
-            padding: const EdgeInsets.all(30.0),
-            child: Container(
-              width: 250.0,
-              height: 250.0,
-              decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image:AssetImage(
-                          "assets/images/login.jpg"),
-                      fit: BoxFit.cover)),
+          SizedBox(
+            child: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Container(
+                width: 250.0,
+                height: 250.0,
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image:AssetImage(
+                            "assets/images/login.jpg"),
+                        fit: BoxFit.cover)),
+              ),
             ),
           ),
           const SizedBox(

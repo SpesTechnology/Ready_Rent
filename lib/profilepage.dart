@@ -17,7 +17,10 @@ class EditProfile extends StatelessWidget {
         textAlign: TextAlign.center,
         ),
           actions: const[
-          Icon(Icons.more_vert_outlined),
+          Padding(
+            padding: EdgeInsets.all(14.0),
+            child: Icon(Icons.logout),
+          ),
         ],
         elevation: 0,
       ),

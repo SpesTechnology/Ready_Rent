@@ -13,6 +13,7 @@ class UserHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       backgroundColor: Colors.white,
        appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -64,51 +65,51 @@ class UserHomePage extends StatelessWidget {
                   ),
             ),
           ), 
-          const SizedBox(
-            height: 10,
-          ),
-         Column(
-           children: [
-             CarouselSlider(
-               items: const [
-                 TopSlider(
-                   image:"assets/images/hp1.jpeg",
-                   title: "What are you looking for?",
-                   detials: "Best hostels, apartments and buildings for all stays",
-                 ),
-
-                 TopSlider(
-                   image:"assets/images/hp2.jpeg",
-                   title: "What are you looking for?",
-                   detials: "Best hostels, apartments and buildings for all stays",
-                 ),
-
-                 TopSlider(
-                   image:"assets/images/hp3.jpeg",
-                   title: "What are you looking for?",
-                   detials: "Best hostels, apartments and buildings for all stays",
-                 ),     
-               ],
-              options: CarouselOptions(
-                 height: 290.0,
-                 enlargeCenterPage:true,
-                 autoPlay: true,
-                 aspectRatio: 16/9,
-                 autoPlayCurve: Curves.fastOutSlowIn,
-                 enableInfiniteScroll:true,
-                 autoPlayAnimationDuration: const Duration(milliseconds: 800),
-                 viewportFraction: 0.8,
-              ),
-              ),
-           ],
+         
+        
+         const SizedBox(
+           height: 10,
          ),
-         Column(
+         CarouselSlider(
+           items: const [
+             TopSlider(
+               image:"assets/images/hp1.jpeg",
+               title: "What are you looking for?",
+               detials: "Best hostels, apartments and buildings for all stays",
+             ),
+
+             TopSlider(
+               image:"assets/images/hp2.jpeg",
+               title: "What are you looking for?",
+               detials: "Best hostels, apartments and buildings for all stays",
+             ),
+
+             TopSlider(
+               image:"assets/images/hp3.jpeg",
+               title: "What are you looking for?",
+               detials: "Best hostels, apartments and buildings for all stays",
+             ),
+
+               
+           ],
+          options: CarouselOptions(
+             height: 200.0, 
+             enlargeCenterPage:true,
+             autoPlay: true,
+             aspectRatio: 16/9,
+             autoPlayCurve: Curves.fastOutSlowIn,
+             enableInfiniteScroll:true,
+             autoPlayAnimationDuration: const Duration(milliseconds: 800),
+             viewportFraction: 0.8,
+          ),
+          ),
+                   Column(
            children:  [
-             const Text("Choose Catergory to browse"),
+            const SizedBox(height: 15,),
              Container(
         color:Colors.white,
         child: Padding(
-        padding:  const EdgeInsets.all(8.0),
+        padding:  const EdgeInsets.all(1.0),
         child: (GridView(
                shrinkWrap: true,
                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -119,11 +120,11 @@ class UserHomePage extends StatelessWidget {
             children: [
               Card(
                 elevation:7,
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.white),
+                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: Colors.white),
                 child: Container(
                         decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20.0),
-                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(5.0),
+                        color: kPrimaryColor,
                 ),
                  child: TextButton(
                     onPressed: (){
@@ -132,7 +133,7 @@ class UserHomePage extends StatelessWidget {
                             }));
                         }, child: const Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text("HOSTELS",style:TextStyle(fontSize: 24,color: Colors.black),),
+                          child: Text("HOSTELS",style:TextStyle(fontSize: 20,color: Colors.white),),
                         ),
                           ),
                         ),
@@ -140,11 +141,11 @@ class UserHomePage extends StatelessWidget {
               ),
               Card(
                 elevation:7,
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.white),
+                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),),
                 child: Container(
                         decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20.0),
-                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(5.0),
+                        color: kPrimaryColor,
                 ),
                  child: TextButton(
                     onPressed: (){
@@ -153,7 +154,7 @@ class UserHomePage extends StatelessWidget {
                             }));
                         }, child: const Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text("BUILDINGS",style:TextStyle(fontSize: 24,color: Colors.black),),
+                          child: Text("BUILDINGS",style:TextStyle(fontSize: 20,color: Colors.white),),
                         ),
                           ),
                         ),
@@ -161,11 +162,11 @@ class UserHomePage extends StatelessWidget {
               ),
               Card(
                 elevation:7,
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.white),
+                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),),
                 child: Container(
                         decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20.0),
-                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(5.0),
+                        color: kPrimaryColor,
                 ),
                  child: TextButton(
                     onPressed: (){
@@ -174,18 +175,18 @@ class UserHomePage extends StatelessWidget {
                             }));
                         }, child: const Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text("APARTMENTS",style:TextStyle(fontSize: 24,color: Colors.black),),
+                          child: Text("APARTMENTS",style:TextStyle(fontSize: 20,color: Colors.white),),
                         ),
                           ),
                         ),),
               ),
               Card(
                 elevation: 7,
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.white),
+                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),),
                 child: Container(
                         decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15.0),
-                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(5.0),
+                        color:kPrimaryColor,
                 ),
                  child: TextButton(
                     onPressed: (){
@@ -194,7 +195,7 @@ class UserHomePage extends StatelessWidget {
                             }));
                         }, child: const Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text("LANDS",style:TextStyle(fontSize: 24,color: Colors.black),),
+                          child: Text("LANDS",style:TextStyle(fontSize: 20,color: Colors.white),),
                         ),
                           ),
                         ),),
@@ -205,11 +206,14 @@ class UserHomePage extends StatelessWidget {
             ),
            ],
          ),
-       ], 
-         
+       ],
      ),
-          
-    );   
+        
+       
+    );
+  
+  
+   
   }
 }
 
@@ -228,46 +232,41 @@ class TopSlider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children:[
-            Container(
-          decoration: BoxDecoration(
-             borderRadius: BorderRadius.circular(2.0),
-               image: DecorationImage(
-                 image: AssetImage(image),
-                 fit: BoxFit.cover,
+    return Container(
+      decoration: BoxDecoration(
+         borderRadius: BorderRadius.circular(2.0),
+           image: DecorationImage(
+             image: AssetImage(image),
+             fit: BoxFit.cover,
+           ),
+         ),
+         child: Column(
+           mainAxisAlignment: MainAxisAlignment.center,
+           crossAxisAlignment:CrossAxisAlignment.center,
+           children: <Widget>[
+             Padding(
+               padding: const EdgeInsets.fromLTRB(75.0,8.0,75.0,8.0),
+               child: Text(title,
+               style: const TextStyle(
+                 color: Colors.white,
+                 fontWeight:FontWeight.bold,
+                 fontSize: 18.0,
+               ),
                ),
              ),
-             child: Column(
-               mainAxisAlignment: MainAxisAlignment.center,
-               crossAxisAlignment:CrossAxisAlignment.center,
-               children: <Widget>[
-                 Padding(
-                   padding: const EdgeInsets.fromLTRB(75.0,8.0,75.0,8.0),
-                   child: Text(title,
-                   style: const TextStyle(
-                     color: Colors.white,
-                     fontWeight:FontWeight.bold,
-                     fontSize: 18.0,
-                   ),
-                   ),
-                 ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(detials,
-                     style: const TextStyle(
-                     color: Colors.white,
-                     fontWeight:FontWeight.bold,
-                     fontSize: 14.0,
-                 ),
-                 ),
-                  ),
-               ],
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(detials,
+                 style: const TextStyle(
+                 color: Colors.white,
+                 fontWeight:FontWeight.bold,
+                 fontSize: 14.0,
              ),
-          ),
-         
-        ],
-    );
+             ),
+              ),
+           ],
+         ),
+      );
   }
 }
 
