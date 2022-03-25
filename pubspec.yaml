@@ -96,6 +96,10 @@ flutter:
       - assets/images/land2.jpg
       - assets/images/land.jpg
       - assets/images/googlelogo.png
+      - assets/images/apartment.jpg
+      - assets/images/building.jpg
+      - assets/images/landcat.jpg
+      - assets/images/hostel.png
 
   #   - images/a_dot_ham.jpeg
 

@@ -33,7 +33,7 @@ class Categories extends StatelessWidget {
                     const Padding(
                       padding:  EdgeInsets.all(15),
                     ),
-                    Ink.image(image: const NetworkImage("https://media-cdn.tripadvisor.com/media/photo-s/18/9e/52/8e/code-pod-hostels-the.jpg"),
+                    Ink.image(image: const AssetImage("assets/images/hostel.png"),
                     fit:BoxFit.cover ,
                     height: 150,
                     ),
@@ -47,7 +47,7 @@ class Categories extends StatelessWidget {
               child: TextButton(
                   onPressed: (){
                           Navigator.push(context, MaterialPageRoute(builder:(context){
-                            return const Hotels();
+                            return const Hostels();
                           }));
                       }, child: const Padding(
                         padding: EdgeInsets.all(8.0),
@@ -72,7 +72,7 @@ class Categories extends StatelessWidget {
                     const Padding(
                       padding:  EdgeInsets.all(15),
                     ),
-                    Ink.image(image: const NetworkImage("https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg"),
+                    Ink.image(image: const AssetImage("assets/images/building.jpg"),
                     fit:BoxFit.cover ,
                     height: 150,
                     ),
@@ -110,7 +110,7 @@ class Categories extends StatelessWidget {
                     const Padding(
                       padding:  EdgeInsets.all(15),
                     ),
-                    Ink.image(image: const NetworkImage("https://images.pexels.com/photos/3990589/pexels-photo-3990589.jpeg?cs=srgb&dl=pexels-curtis-adams-3990589.jpg&fm=jpg"),
+                    Ink.image(image: const AssetImage("assets/images/apartment.jpg"),
                     fit:BoxFit.cover ,
                     height: 150,
                     ),
@@ -121,7 +121,7 @@ class Categories extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10.0),
                       color: Colors.white,
               ),
-              child: TextButton(
+               child: TextButton(
                   onPressed: (){
                           Navigator.push(context, MaterialPageRoute(builder:(context){
                             return const Apartments();
@@ -148,7 +148,7 @@ class Categories extends StatelessWidget {
                     const Padding(
                       padding:  EdgeInsets.all(15),
                     ),
-                    Ink.image(image: const NetworkImage("https://nairametrics.com/wp-content/uploads/2021/06/Land-for-sale.jpg"),
+                    Ink.image(image: const AssetImage("assets/images/landcat.jpg"),
                     fit:BoxFit.cover ,
                     height: 150,
                     ),

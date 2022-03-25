@@ -5,8 +5,8 @@ import 'package:readyrent/hostels/sharedhostels_list_screen.dart';
 import 'package:readyrent/hostels/singlehostel_list_screen.dart';
 
 
-class Hotels extends StatelessWidget {
-  const Hotels({ Key? key }) : super(key: key);
+class Hostels extends StatelessWidget {
+  const Hostels({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
