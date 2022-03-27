@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:readyrent/categories/categories.dart';
 import 'package:readyrent/constant.dart';
 import 'package:readyrent/mainhomepage.dart';
-import 'package:readyrent/profilepage.dart';
+import 'package:readyrent/user%20profile/profilepage.dart';
 import 'package:readyrent/properties/property_list_screen.dart';
 // import 'package:readyrent/search.dart';
 

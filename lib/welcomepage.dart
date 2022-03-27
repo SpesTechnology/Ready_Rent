@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:readyrent/constant.dart';
 import 'package:readyrent/login.dart';
 import 'package:readyrent/signup.dart';
+// import 'package:  responsive_framework/responsive_framework.dart';
 
 
 
@@ -12,6 +13,7 @@ class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+    
       backgroundColor: Colors.white,
       body: ListView(
         children: [
