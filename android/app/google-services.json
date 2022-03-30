@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "643312434620",
+    "project_id": "readyrent-e5527",
+    "storage_bucket": "readyrent-e5527.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643312434620:android:211b27f8cf39348504ffb9",
+        "android_client_info": {
+          "package_name": "com.spestechnology.ReadyRent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643312434620-sva489he2nb6bc8m5gviqp6bfc3uhrsn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spestechnology.ReadyRent",
+            "certificate_hash": "3562d840a0ea8d710bef4fbc8c4ec27829cb4875"
+          }
+        },
+        {
+          "client_id": "643312434620-nd646agtndd6eevknjgt6vvo1q6asb61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMPhJOwLv7F8XqueYBj-l83J3j97nwF9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643312434620-nd646agtndd6eevknjgt6vvo1q6asb61.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

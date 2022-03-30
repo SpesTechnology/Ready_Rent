@@ -23,41 +23,43 @@ class PropertyListScreen extends StatelessWidget {
         Property property = propertyList[index];
         return Padding(
           padding: const EdgeInsets.all(3.0),
-          child: Card(
-            child: ListTile(
-              leading:Image.asset(property.picture),
-              title: Text(property.title),
-              subtitle: Column(
-                children: [
-                  Text(property.details),
-                  Row(
-                    children: [
-                        Icon(property.icon,size: 15,),
-                        Text(property.description)
-                    ],
-                  )
-                  
-                ],
-              ),
-              trailing: TextButton(onPressed: (){
+          child: SizedBox(
+            child: Card(
+              child: ListTile(
+                leading:Image.asset(property.picture),
+                title: Text(property.title),
+                subtitle: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(property.details),
+                    Row(
+                      children: [
+                          Icon(property.icon,size: 15,),
+                          Text(property.description)
+                      ],
+                    ),          
+                  ],
+                ),
+                trailing: TextButton(onPressed: (){
+                    Navigator.push(
+                    context,
+                     MaterialPageRoute(
+                       builder: (context) => DetailsScreen(property)));
+                  },
+                             child: const Text('View detials',
+                    style: TextStyle(
+                    color:Colors.black,
+                    fontSize: 15.0),
+                    ),
+                ),
+                onTap: () {
                   Navigator.push(
-                  context,
-                   MaterialPageRoute(
-                     builder: (context) => DetailsScreen(property)));
+                    context,
+                     MaterialPageRoute(
+                       builder: (context) => DetailsScreen(property)));
                 },
-                           child: const Text('View detials',
-                  style: TextStyle(
-                  color:Colors.black,
-                  fontSize: 15.0),
-                  ),
+              
               ),
-              onTap: () {
-                Navigator.push(
-                  context,
-                   MaterialPageRoute(
-                     builder: (context) => DetailsScreen(property)));
-              },
-            
             ),
           ),
         );

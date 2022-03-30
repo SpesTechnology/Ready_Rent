@@ -1,5 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:readyrent/bottomnavigation.dart';
 import 'package:flutter/material.dart';
 import 'package:readyrent/categories/apartments.dart';
 import 'package:readyrent/categories/buildings.dart';
@@ -66,9 +66,8 @@ class UserHomePage extends StatelessWidget {
             ),
           ), 
          
-        
          const SizedBox(
-           height: 10,
+           height: 5,
          ),
          CarouselSlider(
            items: const [
@@ -88,9 +87,7 @@ class UserHomePage extends StatelessWidget {
                image:"assets/images/hp3.jpeg",
                title: "What are you looking for?",
                detials: "Best hostels, apartments and buildings for all stays",
-             ),
-
-               
+             ),     
            ],
           options: CarouselOptions(
              height: 200.0, 

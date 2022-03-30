@@ -17,7 +17,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
 
 int _currentIndex = 0;
 final List<Widget>  _children = [
-   const UserHomePage(),
+   UserHomePage(),
    const PropertyListScreen(),
    const Categories(),
    const EditProfile(),
@@ -65,4 +65,8 @@ void _onItemTapped(int index){
       
     );
   }
+}
+
+mixin _widgetOptions {
+  static elementAt(int  currentIndex) {}
 }
